@@ -1,0 +1,140 @@
+
+<div class="container top-section">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<a href="/catalog-home"><img class="" src="images/Logo2@1x.png"></a>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 top-rght-section">
+							<ul>
+								<li><a>Contact</a></li>
+								<li><a href="/catalog-landing">Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+	
+<div class="container-fluid">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+     <div class="item" ng-class='{active:$first}' ng-repeat="carousel in carouselContents">
+      <div class="carousel-caption">
+      	<p class="slider-title">{{carousel.title}}</p>
+        {{carousel.content}}
+      </div>
+      <img src="{{carousel.image}}" style="width: 100%" image-on-load>
+    </div>
+  </div>
+   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <img class="arrows-left" src="images/Left-Arrow.png">
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <img class="arrows-right" src="images/Right_Arrow.png">
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div class="container cntr-box">
+					<div class="frst-row">
+					<p class="hds">Technology</p>
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<span>Cognitive</span>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<span>Analytics</span>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<span>Integration/BPM</span>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<span>Mobile</span>
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<span>IoT</span>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<span>Devops</span>
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<span>Others</span>
+						</div>
+					</div>
+				</div>
+				<br>
+					<div class="snd-row">
+					<p class="hds">Industry</p>
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<div>
+									<img src="images/Icon_FS@1x.png">
+							</div>
+							<p>Financial <br>Services</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<div>
+									<img src="images/Icon_HPS@1x.png">
+							</div>
+							<p>Health &amp; Public <br>Services</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<div>
+									<img src="images/Icon_R@1x.png">
+							</div>
+							<p>Products</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<div>
+									<img src="images/Icon_CMT@1x.png">
+							</div>
+							<p>Communications <br>Media &amp; Technology</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<div>
+									<img src="images/Icon_R@1x.png">
+							</div>
+							<p>Resources</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<div>
+									<img src="images/Icon_CI@1x.png">
+							</div>
+							<p>Cross Industry</p>
+						</div>
+					</div>
+				</div>
+				</div>
+	<div class="content-body" ng-init="iniit()">
+				<div class="center-box-container">
+		<div class="row">
+		<div class="home-items" ng-repeat="contents in data.response">
+
+					<div class="col-md-4 col-sm-4 col-xs-4">
+								<div class="image-second-one">
+									<img src="{{contents.imgSrc}}">
+								</div>
+								<div class="label-second">
+									<label>{{contents.title}}</label>
+								</div>
+								<div class="label-second-heading-mini">
+									<label>{{contents.appName}}</label>
+								</div>
+								<div class="label-second-paragraph">
+									<p>{{contents.description}}</p>
+								</div>
+								<div class="label-second-paragraph-image">
+									<img src="images/Read more@1x.png"> <a href="/catalog-details?catalog={{contents.title}}&appN={{contents.appName}}">Read
+										more</a>
+
+								</div>
+							</div>
+		</div>
+		</div>
+		</div>
+	</div>
+

@@ -1,0 +1,11 @@
+	[{
+        "title": "Accounting Standard Migration Portal",
+        "challenge": "The client, who is a tier 1 Telco based in NA, is putting up a proposal to implement the new ASC 606 accounting standard. Accenture client team want to showcase Accenture’s way for migrating to the new accounting standard through an interactive and engaging interface. They would also like to use this tool to familiarize their team with this new standard and the migration approach.",
+        "solution": "Team designed and developed a responsive UI web application after going through the design thinking process. Being very content heavy, we applied user-centric and design-thinking principles to identify innovative ways to showcase the content, making it engaging for the user.",
+        "delivery": "First week focused on a user-centric design and design-thinking workshop to design the flows and user experience. Using Agile methodology, the team completed the MVP (prototype) in 3 sprints of a week each. Team comprised of 1 UI Developer, 1 Integration Engineer and 0.5 Architect Technologies used: Bluemix PaaS, Bootstrap.",
+        "docLink": "",
+        "videoLink": "",
+        "appLink": "https://leia-web.mybluemix.net/index_home.html",
+        "screens": ["Accounting-Standard-Migration-Portal.jpg"],
+        "cred": "Login: cynthia / Bluemix12"
+    }]

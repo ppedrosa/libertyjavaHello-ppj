@@ -1,0 +1,50 @@
+	[{
+        "title": "Mobile Family Wallet",
+        "challenge": "Citibank Mobile Challenge (EALA) competition in search of innovation and ideas that truly change the way the world banks. Ideate and transform concept to working prototype in 4 weeks.",
+        "solution": "We understand our kids may need money at most unexpected times, and need hoping they spend the money wisely.Introducing the 'Family Wallet', a mobile app that solves this problem by giving control to parents to send, track, and control their kids spending in a safe, secure. and fun way.",
+        "delivery": "Using an agile, user-centric design approach, a small global team implemented the Minimal Viable Product (prototype) consisting of an iOS and Android app, within 4 weeks.Technologies used: Bluemix PaaS, Andriod Studio, AngularJS, Bootstrap, cloudant database, integration with Citi API's.",
+        "docLink": "https://kx.accenture.com/repositories/contributionform.aspx?path=c31/3/4&mode=read",
+        "videoLink": "https://mediaexchange.accenture.com/media/t/1_mzg4a15e",
+        "appLink": "https://worklight.acit.accenture.com/appcenterconsoletest/installers.html",
+        "screens": ["1.0.Citimobile.jpeg"],
+        "cred": "Login: demo / demo"
+    },{
+        "title": "Insurance Forms Explorer",
+        "challenge": "Insurance industry works with multiple forms for correspondence, regulatory purposes, etc. Most of these forms are in legacy systems or word files. The forms are not easily searchable to provide the business the view related to possible forms for a particular product or claim or work activity. Currently there is no system that enables management and search of these forms. Request from Accenture Insurance CoE to help with this activity in preparation for a couple of opportunities and client visits to ASIC.",
+        "solution": "The Forms Explorer and Management Platform, accelerates the forms management process by simplifying and making it easier to extract and manage insurers forms. Form Extractor extracts the insurers policy related data data from the different source systems, converts into standard XMLs and persist all the form metadata in DB, which is used by Form explorer for the display in UI. Due to limited access to legacy systems in the time-frame at hand, the data from various source systems was consolidated and made available to team to process further.",
+        "delivery": "Team leveraged SME's from Insurance CoE to validate functional user stories, and followed an agile approach in architecting and designing an MVP that is being showcased to multiple clients.Technology used: Bluemix, Liberty Profile runtime, SQL DB, SSO service.",
+        "docLink": "https://kx.accenture.com/repositories/contributionform.aspx?path=C35/19/67&mode=read",
+        "videoLink": "",
+        "appLink": "http://forms-explorer.eu-gb.mybluemix.net/",
+        "screens": ["Insurance-Forms-Explorer.jpg"],
+        "cred": "Login: sridhar / passw0rd10"
+    },{
+        "title": "Smart Wealth Advisor",
+        "challenge": "Client is a fictitious NA Financial Services Wealth Advisor, who is looking for innovative ways increase effectiveness of their wealth advisors. They are facing challenges in being proactive and managing various clients and portfolios, and having relevant information backed by data points when engaging in discussing with their clients.",
+        "solution": "Developed an iOS app for mobile devices, that provides features for wealth advisors to review their client profile/portfolio, identify upcoming milestones/actions and proactively respond to them. It also provides a way to review real-time data while discussing with the client, and visually represent scenarios and their financial impacts, to help client make decisions.",
+        "delivery": "Initial wireframe and visual design developed based on an iteration of design thinking and discussion with product owner. Using Agile methodology and one week sprints, the app was delivered in 3 weeks. Team consists of 1 scrum master, 1 creative designer, 1 iOS developer.Technology used: iOS, Swift, MongoDB, REST, MobileFirst.",
+        "docLink": "",
+        "videoLink": "",
+        "appLink": "https://worklight.acit.accenture.com/appcenterconsoletest/installers.html",
+        "screens": ["2.0.smart-wealth_advisor.jpg"],
+        "cred": "Login: demo / demo"
+    },{
+        "title": "Trade Decision Engine",
+        "challenge": "Citibank - Mobile Challenge (APAC) - Innovation and agility in banking and financial services, from ideation to working prototype in 4 weeks.Scenario: Bank traders have couple of seconds to price and act on trading requests, having to evaluate various sources of information to minimize risk and maximize profit for the bank.",
+        "solution": "Designed a dashboard that accepts ticker, quantity, buy/sell, and provides summary information from various sources of information, including news feeds, social media, financial information, and internal applications from the bank for regulatory/compliance checks, client portfolio and pricing algorithm. This provides a recommendation along with data points to back the recommendation.",
+        "delivery": "Responsive cognitive computing application hosted on Bluemix, conceptualized, designed and MVP built in 4 weeks. Using user-centric design and agile development methodology.Technologies used: AngularJS, Bootstrap, Rules service on Bluemix, API layer integrated with Citi, Twitter, Yahoo Finance, Google News.",
+        "docLink": "https://kx.accenture.com/repositories/contributionform.aspx?path=C33/90/99&mode=read",
+        "videoLink": "https://mediaexchange.accenture.com/media/t/1_8jxns9uw",
+        "appLink": "https://decision-engine.mybluemix.net/tradeAssistantCognitive.html",
+        "screens": ["1.0.Trade_decision_engile.jpg"]
+    },{
+        "title": "B5 Mobile Banking Prototype",
+        "challenge": "B5 is the code name for a group of 5 banks in Norway, who wanted to combine forces and innovate in digital banking experience for their customers. Goal was to provide a simple and clean interface in order to increase user’s efficiency and satisfaction as well as hide the complexity behind banking operations.",
+        "solution": "The ACIT Mobile Banking Demo is a mobile-friendly web-app running on Bluemix. This demo demonstrates an innovative banking solution created in collaboration between Fjord and ACIT. It showcases the concepts and user experience for several new features like savings goal, progress.",
+        "delivery": "During the design phase we relied on user-centric design principles, working closely with Fjord design team. Using agile delivery, this prototype was conceptualized and delivered in a couple of weeks.Technologies used: NodeJS as runtime at the back-end and HTML5/CSS3 and AngularJS at the front-end. The Business Rules service is used to realize the ‘Saving Goals’ scenario.",
+        "docLink": "https://kx.accenture.com/repositories/contributionform.aspx?path=c32/48/2&mode=read",
+        "videoLink": "",
+        "appLink": "http://acit-mobile-banking.acn.mybluemix.net/",
+        "screens": ["1.0.B5_mobile_banking.jpg"],
+        "cred": "Login: acit / ticia2379"
+    }]

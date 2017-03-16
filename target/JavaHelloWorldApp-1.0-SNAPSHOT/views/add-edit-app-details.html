@@ -1,0 +1,114 @@
+<div class="header-row ng-scope">
+			<div class="main-third-container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-xs-8">
+						<a href="/catalog-home"><img class="" src="images/Logo2@1x.png"></a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="mailto:acit-ww@accenture.com?Subject=Cloud Studio Demo Catalog">Contact</a>
+					</div>
+					<div ng-if="isAdmin" class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="/#/demo-catalog-admin-console" >Admin</a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="/catalog-landing?param=2">Log out</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+<div class="content-details container" style="width: 85%;min-height: 900px;">
+	<form name="addAppForm" class="addAppForm" method="POST"
+		action={{action}} enctype="multipart/form-data">
+		<div>
+			<table>
+				<thead>
+				<!-- <tr>
+				<th colspan="4" style="color: green; text-align: center; font-weight: 500; font-size: 1.2em;">Application details added successfully!!</th>
+				</tr> -->
+					<tr>
+						<th colspan="4"
+							style="color: #075DAA !important; text-align: center;"><h3 style="margin-bottom: 25px; margin-top: 10px;">{{headerText}}</h3></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Application Name</td>
+						<td><input type="text" ng-model="dc.appName" name="appName"
+							required></td>
+							<td>Operating Group</td>
+						<td><select ng-model="dc.opGrp" name="optGrp" required>
+								<option value="">Select</option>
+								<option ng-repeat="opGrpName in opGrpNames"
+									value="{{opGrpName}}">{{opGrpName}}</option>
+						</select></td>
+					</tr>
+					
+					<tr>
+						<td>Technology Area</td>
+						<td><input type="text" ng-model="dc.technologyArea" name="technologyArea"
+							required></td>							
+					</tr>
+
+					<tr>
+						<td>Short Description</td>
+						<td><textarea rows="6" cols="40" ng-model="dc.shortDesc"
+								name="shortDesc">{{dc.challenge}}</textarea></td>
+								<td>Challenge</td>
+						<td><textarea rows="6" cols="40" ng-model="dc.challenge"
+								name="challenge"></textarea></td>
+					</tr>
+
+					<tr>
+						<td>Solution</td>
+						<td><textarea rows="6" cols="40" ng-model="dc.solution"
+								name="solution"></textarea></td>
+								<td>Delivery</td>
+						<td><textarea rows="6" cols="40" ng-model="dc.delivery"
+								name="delivery"></textarea></td>
+					</tr>
+
+					<tr>
+						<td>Document URL</td>
+						<td><input type="url" ng-model="dc.docURL" name="dcmntUrl"></td>
+						<td>Video URL</td>
+						<td><input type="url" ng-model="dc.videoURL" name="videoUrl"></td>
+					</tr>
+
+					<tr>
+						<td>Application URL</td>
+						<td><input type="url" ng-model="dc.appURL" name="appUrl"></td>
+						<td>Application Credentials</td>
+						<td><input type="text" ng-model="dc.appCred"
+							name="appCredential"></td>
+					</tr>
+
+					<tr>
+						<td>Priority</td>
+						<td><input type="number" min="1" max="10" onkeydown="return false"
+							name="appPriority" ng-model="dc.priority"></td>
+							<td>Image</td>
+						<td><input type="file" ng-model="dc.image" id="image"
+							name="image" accept="image/*" ></td>
+					</tr>
+					<tr ng-if= "isEdit">
+						<td colspan="4">
+							<img src ="{{dc.image}}" class="imgPreview"></img>
+								<input type ="hidden" name = "preImg" id="preImg" value="{{dc.image}}">
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="3">
+							<div style="float: right; padding-top: 25px;">
+								<input type="submit" value="{{buttonText}}" class="addAppBtn"
+									style="width: 120px; margin-right: 10px" > <input type="button"
+									value="Reset" class="addAppBtn" ng-click="resetAddAppForm()">
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,171 @@
+
+<div class="container top-section">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<a href="/catalog-home"><img class="" src="images/Logo2@1x.png"></a>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 top-rght-section">
+							<ul>
+								<li><a href="mailto:acit-ww@accenture.com?Subject=Cloud Studio Demo Catalog">Contact</a></li>
+								<li ng-if="isAdmin" style="width: 70px;"><a href="/#/demo-catalog-admin-console">Admin</a></li>
+								<li><a href="/catalog-landing?param=2">Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+	
+<div class="container-fluid">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+     <div class="item" ng-class='{active:$first}' ng-repeat="carousel in carouselContents">
+      <div class="carousel-caption">
+      	<p class="slider-title">{{carousel.title}}</p>
+        {{carousel.content}}
+      </div>
+      <img src="{{carousel.image}}" style="width: 100%" image-on-load>
+    </div>
+  </div>
+   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <img class="arrows-left" src="images/arrow_back@1x.png">
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <img class="arrows-right" src="images/arrow_next@1x.png">
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div class="container cntr-box">
+					<div class="frst-row">
+					<p class="hds">Technology</p>
+					<div class="row">
+						<a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 tp-btns" ng-click="techShow('Cognitive')">
+							Cognitive
+						</a>
+						<a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 tp-btns" ng-click="techShow('Analytics')">
+							Analytics
+						</a>
+						<a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 tp-btns" ng-click="techShow('Integration/BPM')">
+							Integration/BPM
+						</a>
+						<a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 tp-btns" ng-click="techShow('Mobile')">
+							Mobile
+						</a>
+						<a class="col-lg-1 col-md-1 col-sm-4 col-xs-6 tp-btns" ng-click="techShow('IoT')">
+							IoT
+						</a>
+						<a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 tp-btns" ng-click="techShow('Devops')">
+							Devops
+						</a>
+						<a class="col-lg-1 col-md-1 col-sm-4 col-xs-6 tp-btns" ng-click="techShow('Others')">
+							Others
+						</a>
+					</div>
+				</div>
+					<div class="snd-row">
+					<p class="hds">Industry</p>
+					<div class="row">
+						<a href class="bars col-lg-2 col-md-2 col-sm-4 col-xs-6 fn-bg" ng-click="getUpdates('Financial Services')" >
+							<p>Financial <br>Services</p>
+							</a>
+						<a href class="bars col-lg-2 col-md-2 col-sm-4 col-xs-6 hp-bg" ng-click="getUpdates('Health & Public Services')">
+							<p>Health &amp; Public <br>Services</p>
+							</a>
+						<a href class="bars col-lg-2 col-md-2 col-sm-4 col-xs-6 p-bg" ng-click="getUpdates('Products')">
+							<p>Products</p>
+							</a>
+						<a href ng-click="getUpdates('Communications Media & Technology')" class="bars col-lg-2 col-md-2 col-sm-4 col-xs-6 cm-t">
+							<p>Communications <br>Media &amp; Technology</p>
+							</a>
+						<a href class="bars col-lg-2 col-md-2 col-sm-4 col-xs-6 res-bg" ng-click="getUpdates('Resources')">
+							<p>Resources</p>
+							</a>
+						<a href ng-click="getUpdates('Cross Industry')" class="bars col-lg-2 col-md-2 col-sm-4 col-xs-6 cr-bg">
+							<p>Cross Industry</p>
+						</a>
+					</div>
+				</div>
+				</div>
+	<div class="content-body" ng-init="iniit()">
+				<div class="center-box-container">
+		<div class="row">
+		<div class="home-items" ng-repeat="contents in homeContents">
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 landing-page">
+								<div class="image-second-one">
+									<a href="/catalog-details?catalog={{contents.title}}&appN={{contents.appName}}"><img src="{{contents.imgSrc}}"></a>
+								</div>
+								<div class="label-second">
+									<label><a href ng-click="getUpdates(contents.title)" >{{contents.title}}</a></label>
+								</div>
+								<div class="label-second-heading-mini">
+									<label><a href="/catalog-details?catalog={{contents.title}}&appN={{contents.appName}}">{{contents.appName}}</a></label>
+								</div>
+								<div class="label-second-paragraph">
+									<p>{{contents.description}}<span>...</span></p>
+								</div>
+								<div class="label-second-paragraph-image">
+								<div>
+								<a class="icon-click" ng-if="contents.docLink.length>1" href="{{contents.docLink}}" target="_blank" ><img src="images/Document_icon.png"></a><a ng-if="contents.cred.length>1" href="#" data-toggle="tooltip" data-placement="top"
+       title="" data-original-title="{{contents.cred}}" class="icon-click"><img src="images/Mobile_icon.png" data-original-title="{{contents.cred}}"></a><a ng-if="contents.appLink.length>1"  href="{{contents.appLink}}" target="_blank" class="icon-click" ><img src="images/Desktop_icon.png"></a>
+<a class="read-mores" href="/catalog-details?catalog={{contents.title}}&appN={{contents.appName}}">Read
+										more</a></div>
+										<p style="margin-top: 20px;"><img src="images/arrow_next_blue@1x.png">
+										<a href ng-click="getUpdates(contents.title)" class="link-det">view all <span>{{contents.title}}</span> solutions</a></p>
+								</div>
+							</div>
+							
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 tech-page">
+								<div class="image-second-one">
+									<a href="/catalog-details?catalog={{contents.opGrp}}&appN={{contents.appName}}"><img src="{{contents.image}}"></a>
+								</div>
+								<div class="label-second">
+									<label><a href ng-click="getUpdates(contents.opGrp)" >{{contents.opGrp}}</a></label>
+								</div>
+								<div class="label-second-heading-mini">
+									<label><a href="/catalog-details?catalog={{contents.opGrp}}&appN={{contents.appName}}">{{contents.appName}}</a></label>
+								</div>
+								<div class="label-second-paragraph">
+									<p>{{contents.description}}<span>...</span></p>
+								</div>
+								<div class="label-second-paragraph-image">
+								<div>
+								<a class="icon-click" ng-if="contents.docURL.length>1" href="{{contents.docURL}}" target="_blank" ><img src="images/Document_icon.png"></a><a ng-if="contents.appCred.length>1" href="#" data-toggle="tooltip" data-placement="top"
+       title="" data-original-title="{{contents.appCred}}" class="icon-click"><img src="images/Mobile_icon.png" data-original-title="{{contents.appCred}}"></a><a ng-if="contents.appURL.length>1"  href="{{contents.appURL}}" target="_blank" class="icon-click" ><img src="images/Desktop_icon.png"></a>
+<a class="read-mores" href="/catalog-details?catalog={{contents.opGrp}}&appN={{contents.appName}}">Read
+										more</a></div>
+										<p style="margin-top: 20px;"><img src="images/arrow_next_blue@1x.png">
+										<a href ng-click="getUpdates(contents.opGrp)" class="link-det">view all <span>{{contents.opGrp}}</span> solutions</a></p>
+								</div>
+							</div>
+		</div>
+		<div ng-hide="homeContents.length" class="no-data">No Data Found!!!</div>
+			<!-- div class="container scrollup" id="{{contents.homeId}}">
+			<h3>{{contents.title}} <span class="view-all"><a href="/catalog-details?catalog={{contents.title}}">View All Demos ></a></span></h3>
+			<img src="{{contents.imgSrc}}" class="short-img margn-btm25"/>
+			<p class="content-p margn-btm25 small-desc">{{contents.description}}</p>
+			<div class="big-desc">
+				<h3>Challenge</h3>
+			<p class="content-p margn-btm25">{{contents.challenge}}</p>
+			<h3>Solution</h3>
+			<p class="content-p margn-btm25">{{contents.solution}}</p>
+			<h3>Delivery</h3>
+			<p class="content-p margn-btm25">{{contents.delivery}}</p>
+			<div class="details-btmLinks">
+				<a href="{{contents.docLink}}" target="_blank" ng-if="contents.docLink.length>0">Document</a>
+				<a href="{{contents.videoLink}}" target="_blank" ng-if="contents.videoLink.length>0">Video</a>
+				<a href="{{contents.appLink}}" style="margin-right: 0" target="_blank" ng-if="contents.appLink.length>0">Application</a><span data-toggle="tooltip" title="{{contents.cred}}" ng-if="contents.cred.length>0" ng-mouseover="showtitle()" ng-click="showtitle()" class="myTooltip login-details" finish-render>?</span>
+			</div>
+			</div>
+			<a href class="moreLink">MORE DETAILS&nbsp;<img src="images/Down_arrow.png" style="margin-bottom: 4px;"></a>
+			<a href class="lessLink">Less DETAILS&nbsp;<img src="images/up_arrow.png" style="margin-bottom: 4px;"></a>
+			</div-->
+		</div>
+		</div>
+	</div>
+

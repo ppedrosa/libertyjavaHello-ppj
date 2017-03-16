@@ -1,0 +1,49 @@
+	[{
+        "title": "Social Media Dashboard",
+        "challenge": "As part of the Accenture Liquid Studio launch, ACIT Cloud Studio was asked to showcase design-thinking, agile-methodology, devops, and liquid-delivery; This involved transforming an idea to an MVP in days, and adding new incremental features quickly. Ideated on a problem statement for a company marketing team or launch manager trying to assess sentiments about a new campaign or launch, from social media.",
+        "solution": "Created a responsive web application on Bluemix, that integrates with Twitter feeds, and filters out tweets based on search criteria. This was expanded to showcase geo information of tweets, as well as sentiment analysis of the content. Leveraging Bluemix DevOps, we were able to showcase how new features can be tested and automatically rolled over to a higher environment.",
+        "delivery": "Designed and developed in less than a week, with less than 1000 lines of code, 75% of which is HTML/CSS for UI. Leveraging key services from IBM Bluemix.Technology used: AngularJS, Bootstrap, HTML, CSS, Bluemix, Twitter service, sentiment analysis, Google MAP API.",
+        "docLink": "",
+        "videoLink": "",
+        "appLink": "http://cantina-web.cloudstudio.mybluemix.net",
+        "screens": ["Social-Media-Dashboard.jpg"]
+    },{
+        "title": "AS/400 modernization",
+        "challenge": "Large NA Retailer having thousands of stores, currently using a legacy AS400 to manage pricing at store. Looking for innovative solutions to enable mobility and ease-of-use for store associates – as part of its strategic goal to improve the associate productivity. The retailer does not want to change the existing core systems running at store and the new solution is required to use the existing infrastructure.",
+        "solution": "Solution uses a responsive web application hosted on Bluemix, using API Manager and IBM Integration Bus to integrate with legacy back end applications. Responsive web application using open source technologies, and Continuous Integration pipeline for build automation and deployments.",
+        "delivery": "Using Agile methodology, the team completed the MVP (prototype) in two sprints of a week each, with a team of 1 UI Developer, 1 Integration Engineer and 0.5 Architect. Technologies used: Bluemix PaaS, Integration Bus from IBM, AngularJS, Bootstrap.",
+        "docLink": "https://kx.accenture.com/repositories/contributionform.aspx?path=C35/15/25&mode=read",
+        "videoLink": "https://mediaexchange.accenture.com/media/t/1_upf1lq12",
+        "appLink": "http://yoda-web.mybluemix.net",
+        "screens": ["AS400-modernization.jpg"]
+    },{
+        "title": "SAP Support Assist",
+        "challenge": "Accenture has several years worth of knowledge base and data points around support for SAP systems, across a variety of clients and industries. However, we are yet to harness this knowledge more effectively, and continue to face challenges with skilled resources required to provide support to our clients.",
+        "solution": "For this Minimal Viable Product (MVP), the team created a cognitive mobile application, that is able to answer natural language queries on specific modules in SAP, similar to interacting with an SME/Support agent. Watson was loaded and trained with corpus data from about 2000 SAP issue tickets/logs for specific modules.",
+        "delivery": "Initial iteration of sourcing raw data, curating to relevant corpus, creating Q&A pairs and ingesting into Watson; followed by a couple of iterations of training and validating the information; Team completed this and built the mobile app in an iterative approach over 4-6 weeks.Technology used: Watson Cognitive, IBM MobileFirst, HTML/CSS/JS.",
+        "docLink": "javascript:void(0)",
+        "videoLink": "",
+        "appLink": "http://sap-defects-manager.mybluemix.net/jsp/newlogin.jsp",
+        "screens": ["SAP-Support-Assist.jpg"],
+        "cred": "Login: bhavin.mehta@accenture.com / password10"
+    },{
+        "title": "Mainframe modernization",
+        "challenge": "Initiative from ACIT and Application modernization group, to put together a solution and working prototype to showcase modernization strategy to clients.",
+        "solution": "Leveraged Family Wallet mobile app to showcase this approach. Business functions of backend Citi API calls were implemented in mainframe programs. These mainframe programs were made available as REST endpoints via zOS Connect and Bluemix secure gateway. The front-end mobile app invoked these API's.",
+        "delivery": "Using an agile approach, the solution and implementation (including mainframe Cobol program), was completed by a small global team within 3 weeks.Technologies used: Mainframe RD&T, zOS Connect, Bluemix PaaS, Secure Gateway, AngularJS, Bootstrap, cloudant database.",
+        "docLink": "javascript:void(0)",
+        "videoLink": "",
+        "appLink": "https://worklight.acit.accenture.com/appcenterconsoletest/installers.html",
+        "screens": ["Mainframe-modernization.jpg"],
+        "cred": "Login: demo / demo"
+    },{
+        "title": "ACIT Mobile App",
+        "challenge": "Initiative from ACIT leadership to create a mobile app for use by Accenture and ACIT teams, as a way to engage with the ACIT, explore capabilities, and get updates and notifications. Starting with a team that had very limited exposure to mobile application development.",
+        "solution": "Created a hybrid mobile app for Android and iOS platform, hosted on IBM MobileFirst platform and leveraging capabilities of Bluemix PaaS. Enforced Accenture enterprise id authentication and role-based access to showcase client activity requests from Cognos SQL DB, and information from ACIT SharePoint site.",
+        "delivery": "Initial design and UI prototype completed and signed-off by stakeholders, before implementing the app in an iterative manner across several sprints across months, with minimal functionality being included in sprints. Technology used: IBM MobileFirst, HTML, CSS, AngularJS, Bootstrap, MongoDB, SharePoint web-service, SQL DB.",
+        "docLink": "https://kx.accenture.com/repositories/contributionform.aspx?path=C31/78/11&mode=read",
+        "videoLink": "",
+        "appLink": "https://worklight.acit.accenture.com/appcenterconsole/installers.html",
+        "screens": ["1.0.ACIT-Mobile-App.jpeg"],
+        "cred": "Login: demo / demo"
+    }]

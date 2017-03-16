@@ -1,0 +1,20 @@
+	[{
+        "title": "Smart Associate",
+        "challenge": "Client is a fictitious NA Electronics retailer who is struggling with issues related to customer engagement in store. Customers reach out to store associates for help, who either need to be highly trained or use computers at designated locations for guidance. The retailer wants to increase customer engagement by providing services like checkout and information about products wherever the customer is at the store.",
+        "solution": "Developed an app for iPad / mobile devices, that includes features that enable store associates to better serve and engage customers. The app features search, scan, checkout and customer management profiles on the iPad, and uses existing web services the retailer has at store.",
+        "delivery": "Team used design thinking approach to come up with the solution. Using Agile methodology and one week sprints, the app was delivered in 3 weeks. Team consists of 1 scrum master, 1 UI designer, 2 iOS developers, 1 backend engineer.Technology used: iOS, Swift, MongoDB, REST, MobileFirst.",
+        "docLink": "",
+        "videoLink": "",
+        "appLink": "https://worklight.acit.accenture.com/appcenterconsoletest/installers.html",
+        "screens": ["2.0.Smart-Associate.jpg"],
+        "cred": "Login: demo / demo"
+    },{
+        "title": "Drug Trial Monitoring",
+        "challenge": "Client is a fictitious Life Sciences / Health Care organization, that runs drug trials, and is looking at some of the latest technology trends, to identify opportunities to minimize risk, be more proactive in responding to drug adverse events, and leverage the vast amount of data being collected as part of these trials.",
+        "solution": "This application provides an innovative solution to address drug adverse events arising from drug dosage. Application integrates patient genomic information (SNP data) with remote patient monitoring data (e.g. Fitbit wearable for this MVP). Additional features include analytics to observe & compare drug dosage effects on patients with similar genomic signatures (SNP data). For this demo, non-structured data available on public sites has been used, with sample patient details, to mimic details for clinical trials. Real-time patient information from Fitbit is integrated into the application, demonstrating the remote patient monitoring capability.",
+        "delivery": "User-centric design approach and agile approach to design and deliver this Minimal Viable Product (MVP) in 4 sprints of a week each.Technology used: JS Frameworks, FitBit API, Cloudant NOSQL data service on Bluemix, Analytics and Reporting services on Bluemix.",
+        "docLink": "https://kx.accenture.com/repositories/contributionform.aspx?path=C35/19/70&mode=read",
+        "videoLink": "",
+        "appLink": "http://synergia.mybluemix.net",
+        "screens": ["Drug-Trial-Monitoring.jpg"]  
+    }]

@@ -1,0 +1,123 @@
+<div class="header-row ng-scope">
+			<div class="main-third-container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-xs-8">
+						<a href="/catalog-techs"><img class="" src="images/Logo2@1x.png"></a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="mailto:acit-ww@accenture.com?Subject=Cloud Studio Demo Catalog">Contact</a>
+					</div>
+					<div ng-if="isAdmin" class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="/#/demo-catalog-admin-console" >Admin</a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="/catalog-landing?param=2">Log out</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="main-third-container">
+				<div class="main-tittle">{{appName}}</div>
+				<div class="main-link">
+					<a ng-repeat="tec in techArea" href="/catalog-techs?catalog1={{tec}}">{{tec}}</a>&nbsp;&nbsp;<!-- a href="/catalog-details1?catalog1=IoT">IOT</a> <a href="/catalog-details1?catalog1=Mobile">MOBILE</a> <a href="/catalog-details1?catalog1=Devops">DEVOPS</a -->
+				</div>
+			</div>
+
+		<div class="main-center-row">
+			<div class="main-center">
+				<div class="row main-link">
+					<div class="col-md-6 col-sm-12 col-xs-12 main-left-col">
+						<div class="row-content">
+							<label>Challenge</label>
+							<p>{{challenge}}</p>
+						</div>
+						<div class="row-content">
+							<label>Solution</label>
+							<p>{{solution}}</p>
+						</div>
+						<div class="row-content">
+							<label>Delivery</label>
+							<p>{{delivery}}</p>
+						</div>
+						<div class="row-content">
+							<label>Resources</label>
+						</div>
+						<div class="row link-row-one">
+
+							<a ng-if="docLink.length>1" href="{{docLink}}" target="_blank"><img src="images/getstarted_bttn@1x.png"> <label>Get
+								Started</label></a><a ng-if="cred.length>1" href="#" data-toggle="tooltip" data-placement="top"
+       title="" data-original-title="{{cred}}" title=""><img class="myimage" src="images/demo_bttn@1x.png">
+							<label class="lableOne">Demo</label></a> <a ng-if="appLink.length>1" href="{{appLink}}" target="_blank"><img class="myimageone" src="images/app_bttn@1x.png"> <label class="labletwo">Application</label></a>
+
+						</div>
+
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12" style="vertical-align: middle;">
+						<img src="{{imgsrc}}" style="width: 100%">
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	<hr style="border-top: 2px dotted gray; padding-bottom: 5px;">
+	<div class="center-box-container">
+		<div class="">
+			<label class="main-second-heading">Related Demos</label>
+			<div class="row main-second" style="padding-bottom: 0;margin-bottom: 50px;">
+				<div ng-repeat="contents in otherItems | limitTo: 3">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="image-second-one">
+								<a href="/catalog-details?catalog={{contents.title}}&appN={{contents.appName}}"><img src="{{contents.imgSrc}}"></a>
+							</div>
+							<div class="label-second">
+								<label><a href="/catalog-techs?catalog1={{contents.title}}">{{catalogTitle}}</a></label>
+							</div>
+							<div class="label-second-heading-mini">
+								<label><a href="/catalog-details?catalog={{contents.opGrp}}&appN={{contents.appName}}">{{contents.appName}}</a></label>
+							</div>
+							<div class="label-second-paragraph">
+								<p>{{contents.description}}</p>
+							</div>
+							<div class="label-second-paragraph-image">
+								<div>
+								<a class="icon-click" ng-if="contents.docLink.length>1" href="{{contents.docLink}}" target="_blank" ><img src="images/Document_icon.png"></a><a class="icon-click" ng-if="contents.cred.length>1" href="{{contents.cred}}"><img src="images/Mobile_icon.png"></a><a href="{{contents.appLink}}" ng-if="contents.appLink.length>1" target="_blank" class="icon-click" ><img src="images/Desktop_icon.png"></a>
+<a class="read-mores" href="/catalog-details?catalog={{contents.title}}&appN={{contents.appName}}">Read
+										more</a></div>
+										<p style="margin-top: 20px;"><img src="images/arrow_next_blue@1x.png">
+										<a href="/catalog-techs?catalog1={{contents.title}}" class="link-det">view all <span>{{contents.title}}</span> solutions</a></p>
+							</div>
+						</div>
+						</div>
+
+			</div>
+		</div>
+	</div>
+		
+
+		<!-- div class="content-details container">
+				<h3 class="top-head-h3">{{subTitles}}</h3>
+				<div class="txt-center mtops62" ng-repeat="contents in catelogContents">
+					<div class="container brder-btmcolor">
+					<h3>{{contents.title}}</h3>
+			<div ng-if="contents.imgSrc" class="screen-shots" style="width: 100%;">
+				<img src="{{contents.imgSrc}}" > 
+			</div>
+			
+			<h3>Challenge</h3>
+			<p class="content-p margn-btm25">{{contents.challenge}}</p>
+			<h3>Solution</h3>
+			<p class="content-p margn-btm25">{{contents.solution}}</p>
+			<h3>Delivery</h3>
+			<p class="content-p margn-btm25">{{contents.delivery}}</p>
+			<div class="details-btmLinks">
+				<a href="{{contents.docLink}}" target="_blank" ng-if="contents.docLink.length>0">Document</a>
+				<a href="{{contents.videoLink}}" target="_blank" ng-if="contents.videoLink.length>0">Video</a>
+				<a href="{{contents.appLink}}" target="_blank" ng-if="contents.appLink.length>0" style="margin-right: 0">Application</a><span data-toggle="tooltip" title="{{contents.cred}}" ng-if="contents.cred.length>0" ng-mouseover="showtitle($event)" ng-click="showtitle($event)" class="myTooltip login-details">?</span>
+			</div>
+			</div>
+			
+		</div>
+		<a class="goto-top" ng-click="scrollTop()"><img src="images/Goto-top.png"></a>
+</div -->

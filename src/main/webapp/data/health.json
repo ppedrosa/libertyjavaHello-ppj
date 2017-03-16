@@ -1,0 +1,29 @@
+	[{
+        "title": "Watson Intelligent Health Advisor",
+        "challenge": "Internal industry and technology asset to rapidly showcase how Analytics and Cognitive features can be leveraged in the health industry. Explore Watson Cognitive capabilities, and conceptualize user stories that can be translated to an MVP in weeks.",
+        "solution": "Create a mobile application that provides informative details about diseases, tests and treatment options, based on patient's symptoms. Medical staff can provide feedback on responses, to enable Watson to train itself. Included a beta service to identify patient information and records from visual recognition.",
+        "delivery": "This was implemented as a technology proof of concept, as an iteration of exploring Cognitive capabilities and applying to an industry scenario.Technology used: Bluemix, Watson Cognitive API's, Watson Q&A, Language Translation, Visual Recognition, Personality Insights, REST/JSON API.",
+        "docLink": "",
+        "videoLink": "",
+        "appLink": "https://worklight.acit.accenture.com/appcenterconsoletest/installers.html",
+        "screens": ["WatsonIntelligent_HealthAdvisor.jpg"],
+        "cred": "Login: demo / demo"
+    },{
+        "title": "Drug Group Management",
+        "challenge": "Client is a large NA healthcare provider, having a complex integration architecture with several layers, using on-prem solution. There is an IT transformation initative to simplify the architecture and move to a cloud based solution. Client requested project team to revert with an approach involving relevant and newer technology, and agile/liquid development, and show how it would align to their strategy and roadmap.",
+        "solution": "Created a responsive web application that provides functionality to search for drug details and drill down for additional information. It is hosted on Bluemix, integrating with back end services, including a Mule service (upon request from client team) running on an IBM Docker container on Bluemix. The architecture is simplified using micro-services and loosely coupled REST APIs.",
+        "delivery": "Using Agile methodology, the team completed the MVP (prototype) in two sprints of a week each. Team included 1 UI Developer, 1 Integration Engineer and 0.5 Architect / Scrum Master.Technologies used: IBM API Management, Bluemix PaaS, Integration Bus from IBM, AngularJS, Bootstrap, IBM Container (Docker).",
+        "docLink": "",
+        "videoLink": "",
+        "appLink": "http://2-1b-services.cloudstudio.mybluemix.net",
+        "screens": ["Drug-Group-Management.jpg"]
+    },{
+        "title": "Connected Ambulance",
+        "challenge": "Initiated as part of the workforce re-imagined trend in Accenture Technology Vision, to ideate, conceptualize and create a working demo, showcasing how technologies like IoT enable workforces to be more effective.",
+        "solution": "This demo showcases possibilities for the use of wearables and Internet of Things in the health industries. The operator view provides a dashboard for the operator responding to emergency calls; Based on person identifier and geo-location, system will retrieve medical information and route/street-view; These are displayed as cards on Google Glass, along with Emergency information, and detailed information about the patient, such as medical history and prescriptions.",
+        "delivery": "Following design-thinking and agile methodology, the working prototype was created in 3-4 sprints;Technology used: Google Glasses or Google Glasses Simulator; Node-RED, Docker and Google APIs; Bluemix PaaS or Docker Containers hosted on Bluemix.",
+        "docLink": "https://kx.accenture.com/repositories/contributionform.aspx?path=c31/46/56&mode=read",
+        "videoLink": "",
+        "appLink": "http://ambulance-iot-demo.mybluemix.net/operations",
+        "screens": ["ConnectedAmbulance.jpg"]
+    }]

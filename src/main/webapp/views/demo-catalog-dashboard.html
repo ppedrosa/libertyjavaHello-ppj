@@ -1,0 +1,88 @@
+<div class="header-row ng-scope">
+			<div class="main-third-container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-xs-8">
+						<a href="/catalog-home"><img class="" src="images/Logo2@1x.png"></a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="mailto:acit-ww@accenture.com?Subject=Cloud Studio Demo Catalog">Contact</a>
+					</div>
+					<div ng-if="isAdmin" class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="/#/demo-catalog-admin-console" >Admin</a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="/catalog-landing?param=2">Log out</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+<div class="content-details container" style="width: 88%;min-height: 980px;">
+	<div style="color: #000" class="demo-catalog-dashboard">
+		<div class="dashboardHeader">
+			<div style="padding-top: 12px;">
+				<div class="fltLeft">
+					<h3>Demo Catalog Admin Console</h3>
+				</div>
+				<div style="margin-left: 16%;" id="errorSuccessMessage"></div>
+				<div class="addNewApp" ng-click="addNewApp();">Add New Application</div>
+			</div>
+		</div>
+		<table style="width: 100%" class="tbldemo-catalog-dashboard">
+			<thead>
+				<tr>
+					<th style="width: 6%">App ID</th>
+					<th style="width: 35%">Operating Group</th>
+					<th style="width: 49%">App Name</th>
+					<th style="width: 10%;min-width: 108px;">Operation</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="app in dashboardApps">
+					<td>{{app.appId}}</td>
+					<td>{{app.optGrp}}</td>
+					<td>{{app.appName}}</td>
+					<td><div class="editApp" ng-click="openEditAppPage(app.appId)">Edit</div>|<div class="deleteApp" data-target = "#myModal"  data-toggle = "modal" ng-click="openDeleteDialog(app.appName, app.appId);">Delete</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div>
+
+<!-- Delete Modal -->
+<div class = "modal fade" id = "myModal" tabindex = "-1" role = "dialog" 
+   aria-labelledby = "myModalLabel" aria-hidden = "true" style="margin-top: 15%">
+   
+   <div class = "modal-dialog">
+      <div class = "modal-content" style="color: #415b76">
+         
+         <div class = "modal-header">
+            <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                  &times;
+            </button>
+            
+            <h4 class = "modal-title" id = "myModalLabel" style="color:#075DAA; font-weight: 600; font-family: Segoe UI;">
+               Delete Application
+            </h4>
+         </div>
+         
+         <div class = "modal-body" style="font-family: Segoe UI">
+            Are you sure you want to delete, <label style="font-weight: 600">{{deleteAppName}}</label> application?
+         </div>
+         
+         <div class = "modal-footer">
+            <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+               No
+            </button>
+            
+            <button type = "button" class = "btn btn-primary" ng-click="deleteApp()">
+               Yes
+            </button>
+         </div>
+         
+      </div>
+   </div>
+</div>

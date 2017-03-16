@@ -1,0 +1,211 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login Page</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/login.css">
+<style>
+	.footer-space {
+		display: none;
+	}
+	.main-footer {
+		background-color: transparent;
+		position: absolute;
+		bottom: 2px;
+		width: 91%;
+	}
+	.footer-left label {
+		color: #FFFFFF;
+		font-size: 12px;
+	}
+
+	
+	body { 
+  background: url(images/hero@2x.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-right {
+	padding: 30px 50px;
+	background: #075DAA;
+	min-height: 568px;
+}
+
+.btns {
+	background-image: linear-gradient(0deg, #149ED5 4%, #26D1FF 98%);
+	box-shadow: 0 0 13px 0 rgba(0,28,60,0.30);
+	border-radius: 2px;
+}
+
+.link-btns {
+background: #009CD1;
+box-shadow: 0 0 8px 0 rgba(0,0,0,0.13);
+border-radius: 4px;
+padding: 8px 20px;
+color: #fff;
+}
+
+.mTop30 {
+	margin-top: 120px;
+}
+
+h4 {
+	font-size: 39px;
+}
+
+form {
+margin-top: 35px;
+}
+
+.btn-login {
+    margin: 0 auto;
+    margin-top: 35px;
+    float: right;
+}
+
+</style>
+</head>
+<body>
+
+	
+	<div class="container" style="width: 90%;">
+		<div class="col-md-7 col-sm-6 col-xs-12" style="padding-top: 20px;">
+		<a href="/"><img class="" src="images/Logo2@1x.png"></a>
+		<div class="lft-cont mTop30">
+			<h4>Welcome to the new ACIT Demo Catalog</h4>
+			<p class="center-p">Enable our clients' achieve business outcomes with speed and agility, by combining Accenture's deep industry knowledge with technology expertise on IBM solutions from Accenture Center for IBM Technology (ACIT), powered by cloud-based offerings from IBM.</p>
+			<a class="link-btns" href="mailto:acit-ww@accenture.com?Subject=Cloud Studio Demo Catalog">Contact</a>
+		</div>
+		</div>
+		<div class="col-md-5 col-sm-6 col-xs-12 login-right">
+		<div style="margin-top: 154px;">
+			<p class="sign-title">Sign in with your Accenture account</p>
+			<p style="color: red;font-size: 13px;" ng-show="user_message != null">{{user_message}}</p>
+  <form>
+    <div class="form-group row">
+      <label for="uid" class="col-sm-4 col-form-label sign-lables">Email</label>
+      <div class="col-sm-8">
+        <input class="form-control" placeholder="Email" id="uid" name="uid" class="form-control" type="text"
+								ng-focus="focusText()" ng-blur="blurText()"
+								ng-model="uid" ng-change="clearMsg()" title="Enter Username"
+								placeholder="Username" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="pswd" class="col-sm-4 col-form-label sign-lables">Password</label>
+      <div class="col-sm-8">
+        <input type="password" class="form-control" id='pswd' name='pswd' class="form-control"
+								type="password" ng-focus="focusText()"
+								ng-blur="blurText()" placeholder="Password" ng-model="pswd"
+								ng-change="clearMsg()" title="Enter password" ng-trim="false"
+								required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-4">&nbsp;</label>
+      <div class="col-sm-8">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input remmber" type="checkbox"> Remember my login details
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row btn-login" style='display: block !important;'>
+        <input type="button" class="btns login-btn" style="width: 160px" ng-click="submitLogin(uid,pswd)" value="Login">
+    </div>
+  </form>
+
+			<!-- div class="login-container row">
+				<div class="col col-md-6">
+					<img src="images/login_image.png">
+				</div>
+				<div class="col col-md-6" style="padding-top: 25px;">
+
+					<div class="padding"
+						style="color: black; font-weight: bold; font-size: 18px; padding-left: 15px;">
+						<p>Sign in with your Accenture account</p>
+					</div>
+
+					<div class="padding" style="padding-left: 15px"
+						ng-show="user_message != null">
+						<p style="color: red">{{user_message}}</p>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-3 control-label"
+							style="color: black; padding-top: 20px;">User Name</label>
+						<div class="col-sm-9" style="padding: 10px;">
+							<input id="uid" name="uid" class="form-control" type="text"
+								style="width: 75%" ng-focus="focusText()" ng-blur="blurText()"
+								ng-model="uid" ng-change="clearMsg()" title="Enter Username"
+								placeholder="Username" required />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword3" class="col-sm-3 control-label"
+							style="color: black; padding-top: 20px;">Password</label>
+						<div class="col-sm-9" style="padding: 10px;">
+							<input id='pswd' name='pswd' class="form-control"
+								style="width: 75%" type="password" ng-focus="focusText()"
+								ng-blur="blurText()" placeholder="Password" ng-model="pswd"
+								ng-change="clearMsg()" title="Enter password" ng-trim="false"
+								required />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-3 col-sm-9">
+							<div class="checkbox">
+								<label style="color: blue;"> <input type="checkbox"
+									class="saveUser" title="Save the user details"
+									ng-click="chkme('saveUser')" style="color: black;">
+									Remember my login details
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-3" style="padding-left: 18px">
+
+							<button class="btn btns" title="login"
+								ng-click="submitLogin(uid,pswd)">Login</button>
+						</div>
+					</div>
+				</div>
+			</div -->
+			</div>
+		</div>
+			<div class="row main-footer">
+				<div class="col-md-6 col-sm-6 col-xs-6 footer-left">
+					<label>Copyright © 2017 Accenture All rights reserved</label>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 footer-right">
+					<label>Built by Accenture Center for IBM Technologies Cloud
+						Studio, powered by IBM Bluemix</label>
+				</div>
+			</div>
+	</div>
+	<!-- div class="header-row ng-scope">
+			<div class="main-third-container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-xs-8">
+						<a href="/catalog-home"><img class="" src="images/Logo2@1x.png"></a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="mailto:acit-ww@accenture.com?Subject=Cloud Studio Demo Catalog">Contact</a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="/#/demo-catalog-admin-console" ng-if="isAdmin">Admin</a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1 header-link">
+						<a href="/catalog-landing?param=2">Log out</a>
+					</div>
+				</div>
+			</div>
+
+		</div> -->
+</body>
+</html>

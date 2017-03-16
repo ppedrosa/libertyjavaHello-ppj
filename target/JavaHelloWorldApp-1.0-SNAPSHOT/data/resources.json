@@ -1,0 +1,11 @@
+	[{
+        "title": "Contract Registration App",
+        "challenge": "Internal industry asset to leverage existing SOA platforms and enterprise resources, to showcase business capabilities around contract registration in the Utilities space.",
+        "solution": "Created a hybrid mobile app, that consumes REST API's to invoke business service implementation on ESB with BPM workflow and Canonical Data Model for standardization and compatibility. Business capabilities: Workflow automation, Third Party Validation for Customer details, Automatic Customer notification via email, Fully Automated System.",
+        "delivery": "Delivered mobile app in 3-4 weeks, with a dedicated team, leveraging re-usable components from SOA architecture.Technology used: HTML, CSS, JS frameworks, API, BPM, WESB; MobileFirst.",
+        "docLink": "",
+        "videoLink": "",
+        "appLink": "https://worklight.acit.accenture.com/appcenterconsoletest/installers.html",
+        "screens": ["Contract-Registration-App.jpg"],
+        "cred": "Login: demo / demo"
+    }]
